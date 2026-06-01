@@ -1,0 +1,342 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: hsl(270, 20%, 96%);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+
+.purple-bg {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    width: 400px;
+    height: 83vh;
+    background: linear-gradient(
+        hsl(293, 100%, 63%),
+        hsl(264, 100%, 61%)
+    );
+    border-radius: 0 0 250px 250px;
+    z-index: -1;
+}
+
+.gray-bg {
+    position: absolute;
+    bottom: 0;
+    right: -120px;
+    width: 400px;
+    height: 85vh;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 250px 250px 0 0;
+    z-index: -1;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+
+
+.phone {
+    width: 320px;
+    background: white;
+    border-radius: 35px;
+    padding: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.phone-top {
+    width: 150px;
+    height: 25px;
+    background: white;
+    border-radius: 21px;
+    margin: auto;
+    margin-bottom: -12px;
+    position: relative;
+    top: -5px;
+}
+
+
+
+.chat-header {
+    background: linear-gradient(
+        to right,
+        hsl(264, 100%, 61%),
+        hsl(293, 100%, 63%)
+    );
+
+    padding: 30px 15px 15px;
+    border-radius: 25px 25px 8px 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.back-btn {
+    font-size: 20px;
+}
+
+.chat-header img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.profile h4 {
+    font-size: 14px;
+}
+
+.profile p {
+    font-size: 10px;
+    opacity: 0.8;
+}
+
+
+.chat-body {
+    background: hsl(270, 20%, 96%);
+    padding: 15px;
+    border-radius: 0 0 25px 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    padding: 10px;
+    font-size: 12px;
+    max-width: 70%;
+    border-radius: 12px;
+    line-height: 1.4;
+}
+
+.left {
+    background: rgba(216, 158, 255, 0.15);
+    color: hsl(276, 55%, 52%);
+    border-bottom-left-radius: 4px;
+}
+
+.right {
+    background: white;
+    margin-left: auto;
+    color: hsl(271, 15%, 43%);
+    border-bottom-right-radius: 4px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.small {
+    width: fit-content;
+}
+
+
+
+.dog-images {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.dog-images img {
+    width: 50px;
+    border-radius: 12px;
+}
+
+
+
+.price-box {
+    background: linear-gradient(
+        to right,
+        hsl(293, 100%, 63%),
+        hsl(264, 100%, 61%)
+    );
+
+    color: white;
+    padding: 12px 15px;
+    border-radius: 14px 14px 14px 4px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+}
+
+.price-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.circle {
+    width: 18px;
+    height: 18px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.price-left p {
+    font-size: 12px;
+}
+
+.price-box h3 {
+    font-size: 18px;
+}
+
+
+
+.input-box {
+    background: white;
+    border-radius: 30px;
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 10px;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.input-box button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background: hsl(271, 36%, 24%);
+    color: white;
+    cursor: pointer;
+}
+
+/* TEXT CONTENT */
+
+.text-content {
+    max-width: 450px;
+}
+
+.text-content h1 {
+    color: hsl(271, 36%, 24%);
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    color: hsl(270, 7%, 64%);
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 900px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 60px;
+        padding: 80px 25px 50px;
+    }
+
+
+
+    .phone {
+        width: 280px;
+    }
+
+    
+
+    .text-content {
+        max-width: 100%;
+    }
+
+    .text-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .text-content p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+
+
+    .purple-bg {
+        width: 220px;
+        height: 60vh;
+        left: -80px;
+        border-radius: 0 0 180px 180px;
+    }
+
+    .gray-bg {
+        width: 220px;
+        height: 60vh;
+        right: -80px;
+        border-radius: 180px 180px 0 0;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .container {
+        width: 100%;
+        padding: 60px 20px;
+        gap: 50px;
+    }
+
+    .phone {
+        width: 250px;
+    }
+
+    .text-content h1 {
+        font-size: 2rem;
+    }
+
+    .text-content p {
+        font-size: 15px;
+    }
+
+    .dog-images img {
+        width: 45px;
+    }
+
+    .message {
+        font-size: 11px;
+    }
+}
